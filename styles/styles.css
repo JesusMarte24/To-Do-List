@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin-top: 15px;
+    display: flex;
+    flex-flow: wrap;
+    align-content: space-around;
+    flex-direction: column;
+    border: 5px solid transparent;
+}
+
+.container--top {
+    width: 290px;
+    height: 165px;
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    border-radius: 10px 10px 0 0;
+    position: relative;
+    border-bottom: 2px solid transparent;
+}
+
+.to-do-list {
+    position: absolute;
+    left: 11px;
+    font-size: 18px;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    align-self: center;
+    font-weight: bold;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    padding: 4px;
+}
+
+.date {
+    position: absolute;
+    left: 185px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    text-transform: capitalize;
+    align-self: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+}
+
+
+.container--bottom {
+    border-radius: 0 0 10px 10px;
+    background-color: #F0F8FF;
+    display: flex;
+    height: 330px;
+    width: 290px;
+    position: relative;
+}
+
+.refresh {
+    position: absolute;
+    left: 250px;
+    top: 10px;
+}
+
+.refresh:hover {
+    transform: translateY(-4px);
+}
+
+.refresh:active {
+    transform: translateY(1px);
+}
