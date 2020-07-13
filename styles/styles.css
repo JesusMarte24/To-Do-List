@@ -1,147 +1,169 @@
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-        font-family: 'Roboto', sans-serif;
-        background: linen;
-    }
+body {
+  font-family: "Roboto", sans-serif;
+  background: linen;
+}
 
-    .container {
-        margin-top: 5px;
-        display: flex;
-        flex-flow: wrap;
-        align-content: space-around;
-        flex-direction: column;
-        border: 5px solid transparent;
-    }
+.container {
+  margin-top: 5px;
+  display: flex;
+  flex-flow: wrap;
+  align-content: space-around;
+  flex-direction: column;
+  border: 5px solid transparent;
+}
 
-    .container--top {
-        width: 290px;
-        height: 165px;
-        background-image: url("../img/fondo.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        display: flex;
-        border-radius: 10px 10px 0 0;
-        position: relative;
-        border-bottom: 2px solid transparent;
-    }
+.container--top {
+  width: 290px;
+  height: 165px;
+  background-image: url("../img/fondo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  border-bottom: 2px solid transparent;
+}
 
-    .to-do-list {
-        position: absolute;
-        left: 11px;
-        font-size: 18px;
-        text-transform: capitalize;
-        letter-spacing: 0.5px;
-        align-self: center;
-        font-weight: bold;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
-        padding: 4px;
-    }
+.to-do-list {
+  position: absolute;
+  left: 11px;
+  font-size: 18px;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  align-self: center;
+  font-weight: bold;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+  padding: 4px;
+}
 
-    .date {
-        position: absolute;
-        left: 185px;
-        font-size: 18px;
-        letter-spacing: 0.5px;
-        font-weight: bold;
-        text-transform: capitalize;
-        align-self: center;
-        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
-        padding: 5px;
-    }
+.date {
+  position: absolute;
+  left: 185px;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  text-transform: capitalize;
+  align-self: center;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+  padding: 5px;
+}
 
+.container--bottom {
+  border-radius: 0 0 10px 10px;
+  background-color: #f0f8ff;
+  display: flex;
+  height: 430px;
+  width: 290px;
+  position: relative;
+  flex-direction: column;
+}
 
-    .container--bottom {
-        border-radius: 0 0 10px 10px;
-        background-color: #F0F8FF;
-        display: flex;
-        height: 430px;
-        width: 290px;
-        position: relative;
-        flex-direction: column;
-    }
+.bottom--header {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  border-bottom: 1px solid #777;
+  justify-content: space-between;
+}
 
+.sentence {
+  text-transform: capitalize;
+  margin: 15px 10px 15px;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  color: #777;
+}
 
-    .bottom--header {
-        display: flex;
-        height: 55px;
-        align-items: center;
-        border-bottom: 1px solid #777;
-    }
+.refresh {
+  margin: 10px 15px 10px 0px;
+  border: 1px solid transparent;
+  outline: none;
+  background-color: transparent;
+}
 
-    .sentence {
-        text-transform: capitalize;
-        margin: 15px 10px 15px;
-        font-size: 15px;
-        letter-spacing: 0.5px;
-        font-weight: bold;
-        color: #777;
-    }
+.refresh:hover {
+  transform: translateY(-4px);
+  cursor: pointer;
+}
 
-    .refresh {
-        margin: 10px 15px 5px 0px;
-        border: 1px solid transparent;
-        outline: none;
-        background-color: transparent;
-    }
+.refresh:active {
+  transform: translateY(1px);
+}
 
+.refresh:visited {
+  outline: none;
+}
 
+.container--bottom--list {
+  height: 370px;
+  width: 280px;
+  align-self: center;
+  margin-top: 10px;
+  border: 3px solid white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
-    .refresh:hover {
-        transform: translateY(-4px);
-        cursor: pointer;
-    }
+.container--bottom--add {
+  display: flex;
+  justify-content: flex-start;
+}
 
-    .refresh:active {
-        transform: translateY(1px);
-    }
+.container--bottom--button {
+  background-color: transparent;
+  outline: none;
+  border: 1px solid transparent;
+}
 
-    .refresh:visited {
-        outline: none;
-    }
+.container--bottom--button:hover {
+  transform: translateY(-4px);
+  cursor: pointer;
+}
 
-    .container--bottom--list {
-        border: 1px solid red;
-        height: 357px;
-        width: 280px;
-        align-self: center;
-        margin-top: 10px;
-        border: 3px solid white;
-        border-radius: 5px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
+.container--bottom--button:active {
+  transform: translateY(1px);
+}
 
-    .container--bottom--add {
-        display: flex;
-        justify-content: space-between;
-    }
+.container--bottom--button:visited {
+  outline: none;
+}
 
-    .container--bottom--button {
-        background-color: transparent;
-        outline: none;
-        border: 1px solid transparent;
-    }
+.button--add--img {
+  width: 55px;
+}
 
-    .container--bottom--button:hover {
-        transform: translateY(-4px);
-        cursor: pointer;
-    }
+.container--bottom--value {
+  height: 35px;
+  border: 1px solid darkturquoise;
+  align-self: flex-end;
+  width: 213px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: bold;
+  color: #777;
+}
 
-    .container--bottom--button:active {
-        transform: translateY(1px);
-    }
+.container--bottom--value::placeholder {
+  text-align: center;
+  color: #777;
+  font-size: 12px;
+  text-transform: capitalize;
+}
 
-    .container--bottom--button:visited {
-        outline: none;
-    }
-
-    .button--add--img {
-        margin: 10px;
-    }
+.container--bottom--value:focus {
+  border: 1px solid #f0aeaf;
+  outline: none;
+}
