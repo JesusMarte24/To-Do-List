@@ -1,28 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <title>To Do List</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="container--top">
-            <h2 class="to-do-list">To do list</h2>
-            <a class="date">thursday</a>
+      <div class="container--top">
+        <h2 class="to-do-list">To do list</h2>
+        <a class="date">thursday</a>
+      </div>
+      <div class="container--bottom">
+        <div class="bottom--header">
+          <p class="sentence">
+            there isn't exist such as thing as the lack of time
+          </p>
+          <button class="refresh">
+            <img src="./icon/refresh.png" alt="icon refresh" width="25px" />
+          </button>
         </div>
-        <div class="container--bottom">
-            <div class="bottom--top">
-                <p class="sentence">there isn't exist such as thing as the lack of time</p>
-                <a href="#" class="refresh"><img src="./icon/refresh.png" alt="icon" width="25px"></a>
-            </div>
+        <div class="container--bottom--list">
+          <ol>
+            <li></li>
+          </ol>
+          <div class="container--bottom--add">
+            <button class="container--bottom--button">
+              <img
+                class="button--add--img"
+                src="./icon/add1.png"
+                alt="icon add"
+                width="35px"
+              />
+            </button>
+
+            <input type="text" placeholder="what do i have to do today..." />
+          </div>
         </div>
+      </div>
     </div>
-
-</body>
-
+  </body>
 </html>

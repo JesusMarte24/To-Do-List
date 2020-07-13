@@ -6,6 +6,7 @@
 
     body {
         font-family: 'Roboto', sans-serif;
+        background: linen;
     }
 
     .container {
@@ -38,7 +39,7 @@
         letter-spacing: 0.5px;
         align-self: center;
         font-weight: bold;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
         padding: 4px;
     }
 
@@ -50,7 +51,7 @@
         font-weight: bold;
         text-transform: capitalize;
         align-self: center;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
         padding: 5px;
     }
 
@@ -59,13 +60,14 @@
         border-radius: 0 0 10px 10px;
         background-color: #F0F8FF;
         display: flex;
-        height: 385px;
+        height: 430px;
         width: 290px;
         position: relative;
+        flex-direction: column;
     }
 
 
-    .bottom--top {
+    .bottom--header {
         display: flex;
         height: 55px;
         align-items: center;
@@ -83,13 +85,63 @@
 
     .refresh {
         margin: 10px 15px 5px 0px;
-        ;
+        border: 1px solid transparent;
+        outline: none;
+        background-color: transparent;
     }
+
+
 
     .refresh:hover {
         transform: translateY(-4px);
+        cursor: pointer;
     }
 
     .refresh:active {
         transform: translateY(1px);
+    }
+
+    .refresh:visited {
+        outline: none;
+    }
+
+    .container--bottom--list {
+        border: 1px solid red;
+        height: 357px;
+        width: 280px;
+        align-self: center;
+        margin-top: 10px;
+        border: 3px solid white;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .container--bottom--add {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .container--bottom--button {
+        background-color: transparent;
+        outline: none;
+        border: 1px solid transparent;
+    }
+
+    .container--bottom--button:hover {
+        transform: translateY(-4px);
+        cursor: pointer;
+    }
+
+    .container--bottom--button:active {
+        transform: translateY(1px);
+    }
+
+    .container--bottom--button:visited {
+        outline: none;
+    }
+
+    .button--add--img {
+        margin: 10px;
     }
