@@ -59,7 +59,7 @@ body {
   border-radius: 0 0 10px 10px;
   background-color: #f0f8ff;
   display: flex;
-  height: 430px;
+  height: 450px;
   width: 290px;
   position: relative;
   flex-direction: column;
@@ -103,7 +103,7 @@ body {
 }
 
 .container--bottom--list {
-  height: 370px;
+  height: 390px;
   width: 280px;
   align-self: center;
   margin-top: 10px;
@@ -116,10 +116,28 @@ body {
 
 .container--list {
   list-style-type: none;
+  overflow-y: scroll;
+}
+
+.container--list::-webkit-scrollbar {
+  width: 7px;
+}
+
+.container--list::-webkit-scrollbar-thumb {
+  background-color: #c5e8e2;
+  border-radius: 10px;
+  outline: 1px solid slategrey;
 }
 
 .list--items {
   position: relative;
+  padding: 10px;
+  color: #444;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-align: center;
+  text-transform: capitalize;
 }
 
 .item--modal {
@@ -131,12 +149,13 @@ body {
   font-size: 14px;
   letter-spacing: 0.5px;
   font-weight: bold;
-  color: #777;
-  background-color: white;
+  color: white;
+  background-color: #f0aeaf;
   text-transform: capitalize;
   display: none;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .container--bottom--add {
