@@ -1,6 +1,4 @@
 {
-  let list = document.querySelectorAll(".list--items");
-  let modalItem = document.querySelectorAll(".item--modal");
   let containerList = document.querySelector(".container--list");
   let button = document.querySelector(".container--bottom--button");
   let html = `<li class="list--items">
@@ -10,13 +8,19 @@
   let inputValue = document.querySelector(".container--bottom--value");
 
   button.addEventListener("click", () => {
-    let elementList;
-    elementList = html.replace("things", inputValue.value);
-    containerList.insertAdjacentHTML("beforeend", elementList);
-    countElements();
+    if (inputValue.value !== "" && inputValue.value !== " ") {
+      let elementList;
+      elementList = html.replace("things", inputValue.value);
+      containerList.insertAdjacentHTML("beforeend", elementList);
+      countElements();
+      inputValue.value = "";
+    }
   });
 
   function countElements() {
+    let list = document.querySelectorAll(".list--items");
+    let modalItem = document.querySelectorAll(".item--modal");
+
     for (let i = 0; i < list.length; i++) {
       list[i].addEventListener("mouseover", () => {
         mouseOver();
