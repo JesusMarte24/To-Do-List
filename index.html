@@ -1,42 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>To Do List</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <title>To Do List</title>
-</head>
-
-<body>
-  <div class="container">
-    <div class="container--top">
-      <h2 class="to-do-list">To do list</h2>
-      <a class="date">Sunday</a>
-    </div>
-    <div class="container--bottom">
-      <div class="bottom--header">
-        <p class="sentence">
-          let's organize your day
-        </p>
-        <button class="refresh">
-          <img src="./icon/refresh.png" alt="icon refresh" width="25px" />
-        </button>
+  <body>
+    <div class="container">
+      <div class="container--top">
+        <h2 class="to-do-list">To do list</h2>
+        <a class="date">Sunday</a>
       </div>
-      <div class="container--bottom--list">
-        <ul class="container--list">
-        </ul>
-        <div class="container--bottom--add">
-          <button class="container--bottom--button">
-            <img class="button--add--img" src="./icon/add.png" alt="icon add" width="35px" />
+      <div class="container--bottom">
+        <div class="bottom--header">
+          <p class="sentence">
+            let's organize your day
+          </p>
+          <button class="refresh">
+            <img src="./icon/refresh.png" alt="icon refresh" width="25px" />
           </button>
-          <input class="container--bottom--value" type="text" placeholder="what do i have to do today..." required>
+        </div>
+        <div class="container--bottom--list">
+          <ul class="container--list">
+            <!-- <li class="list--items">
+            <i>things<i>
+                <div class="item--modal">Mark as completed?</div>
+          </li> -->
+          </ul>
+          <div class="container--bottom--add">
+            <button class="container--bottom--button">
+              <img
+                class="button--add--img"
+                src="./icon/add.png"
+                alt="icon add"
+                width="35px"
+              />
+            </button>
+            <input
+              class="container--bottom--value"
+              type="text"
+              placeholder="what do i have to do today..."
+              required
+            />
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script src="./assets/script.js"></script>
-</body>
-
+    <script src="./assets/script.js"></script>
+  </body>
 </html>

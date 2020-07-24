@@ -158,6 +158,10 @@ body {
   cursor: pointer;
 }
 
+.completed {
+  text-decoration: line-through;
+}
+
 .container--bottom--add {
   display: flex;
   justify-content: flex-start;
