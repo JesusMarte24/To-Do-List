@@ -45,7 +45,7 @@ body {
 
 .date {
   position: absolute;
-  left: 185px;
+  left: 180px;
   font-size: 18px;
   letter-spacing: 0.5px;
   font-weight: bold;
@@ -150,13 +150,27 @@ body {
   letter-spacing: 0.5px;
   font-weight: bold;
   color: white;
-  background-color: #f0aeaf;
+  background-color: #c5e8e2;
   text-transform: capitalize;
   display: none;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   cursor: pointer;
 }
+
+.item--modal--a1 {
+  background-color: #c5e8e2;
+  width: 70%;
+  height: 100%;
+
+}
+
+.item--modal--a2 {
+  background-color: #f0aeaf;
+  height: 100%;
+  width: 30%;
+}
+
 
 .completed {
   text-decoration: line-through;
