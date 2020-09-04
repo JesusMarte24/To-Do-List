@@ -120,12 +120,11 @@ body {
 }
 
 .container--list::-webkit-scrollbar {
-  width: 7px;
+  width: 1px;
 }
 
 .container--list::-webkit-scrollbar-thumb {
-  background-color: #c5e8e2;
-  border-radius: 10px;
+  background-color: transparent;
   outline: 1px solid slategrey;
 }
 
@@ -150,27 +149,61 @@ body {
   letter-spacing: 0.5px;
   font-weight: bold;
   color: white;
-  background-color: #c5e8e2;
+  background-color: transparent;
   text-transform: capitalize;
   display: none;
   justify-content: space-between;
-  align-items: center;
+  align-content: center;
   cursor: pointer;
 }
 
 .item--modal--a1 {
   background-color: #c5e8e2;
   width: 70%;
-  height: 100%;
-
+  /* height: 100%; */
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color: white;
 }
 
 .item--modal--a2 {
   background-color: #f0aeaf;
-  height: 100%;
+  /* height: 100%; */
   width: 30%;
+  text-align: center;
+  outline: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  font-weight: 400;
+  color: white;
 }
 
+.item--modal--a1:hover {
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+
+.item--modal--a1:active {
+  transform: translateY(1px);
+}
+
+.item--modal--a2:hover {
+  transform: translateY(-4px);
+  cursor: pointer;
+}
+
+.item--modal--a2:active {
+  transform: translateY(1px);
+}
 
 .completed {
   text-decoration: line-through;

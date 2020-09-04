@@ -3,8 +3,8 @@ let button = document.querySelector(".container--bottom--button");
 let html = `<li class="list--items id="">
   <i>things<i>
   <div class="item--modal">
-     <a class="item--modal--a1">Mark as completed?</a>
-     <a class="item--modal--a2">Delete?</a>
+     <button class="item--modal--a1">Mark as completed?</button>
+     <button class="item--modal--a2">Delete?</button>
   </div>
   </li>`;
 let inputValue = document.querySelector(".container--bottom--value");
